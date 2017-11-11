@@ -19,8 +19,6 @@ public class AuthMeBridge extends JavaPlugin implements PluginMessageListener {
 	String autoLoginMessage = ChatColor.GREEN + "Your session has been resumed by the bridge.";
 
 	public void onEnable() {
-		log.info(prefix + "Hello world");
-		
 		if (!getServer().getPluginManager().isPluginEnabled("AuthMe")) {
 			log.info(prefix + "AuthMe not found, disabling");
 			getServer().getPluginManager().disablePlugin(this);
